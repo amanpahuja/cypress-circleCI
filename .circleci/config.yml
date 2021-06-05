@@ -10,3 +10,6 @@ workflows:
             - cypress/install
           parallel: true
           parallelism: 3
+          post-steps:
+            - store_test_results:
+                path: cypress/results
